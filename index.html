@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es_CL">
+<head>
+	<title>whatsapp</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="ejercicio de nivelacion">
+	<meta name="author" content="alejandra Morales">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<!-- Bootstrap Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="whatsapp-web">
+		<div class="container">
+			<aside class="col-md-4 whatsapp-contacto">
+				<header class="whatsapp-profile clearfix">
+					<div class="perfil col-xs-7">
+						<img src="assets/img/gian.jpg" alt="">
+						<div class="fa fa-address-card">
+						</div>
+						<div  class="fa fa-ellipsis-v"></div>
+					</div>
+				</header>
+				<div class="whatsapp-busqueda icon-busqueda">
+					<input type="text" placeholder="Buscar o empieza un chat" class="whatsapp-busqueda-contacto">
+				</div>
+				<ul class="whatsapp-recent-chats">
+					<li>
+						<div class="perfil">
+							<img src="assets/img/logocodeacademy.png" alt="" class="wh-44">
+							<h4 class="whatsapp-contacto-name">Laboratoria Chile</h4>
+							<p class="whatsapp-ultimo-mensaje" id="mensaje">Hola mundo!</p>
+						</div>
+						<div class="hora" id="hora">14:27</div>
+					</li>
+					<li>
+						<div onclick="cambiaPerfil()" class="perfil">
+							<img src="assets/img/raymi.jpg" alt="" class="wh-44">
+							<h4 class="whatsapp-contacto-name">Belen</h4>
+							<p class="whatsapp-ultimo-mensaje">quien se anima a andar en bici?</p>
+						</div>
+						<div class="hora">11:25</div>
+					</li>
+					<li>
+						<div class="perfil">
+							<img src="assets/img/mariana.jpg" alt="" class="wh-44">
+							<h4 class="whatsapp-contacto-name">Rocio</h4>
+							<p class="whatsapp-ultimo-mensaje">Tengo en mente una actividad muy buena para el taller de esta semana</p>
+						</div>
+						<div class="hora">09:25</div>
+					</li>
+					<li>
+						<div class="perfil">
+							<img src="assets/img/anamaria.jpg" alt="" class="wh-44">
+							<h4 class="whatsapp-contacto-name">Blanca</h4>
+							<p class="whatsapp-ultimo-mensaje">Si apueba todo el salon, noche de canchitas!!</p>
+						</div>
+						<div class="hora">Ayer</div>
+					</li>
+					<li>
+						<div class="perfil"> 
+							<img src="assets/img/rodulfo.jpg" alt="" class="wh-44">
+							<h4 class="whatsapp-contacto-name">caro</h4>
+							<p class="whatsapp-ultimo-mensaje"> que emoción! ¿Cómo van las chicas?</p>
+						</div>
+						<div class="hora">Martes</div>
+					</li>
+					<li>
+						<div class="perfil">
+							<img src="assets/img/andrea.jpg" alt="" class="wh-44">
+							<h4 class="whatsapp-contacto-name">Marcia</h4>
+							<p class="whatsapp-ultimo-mensaje">Los trabajos de las chicas que vi, estaban excelentes :D </p>
+						</div>
+						<div class="hora">Lunes</div>
+					</li>
+					<li>
+						<div class="perfil">
+							<img src="assets/img/mariapaula.jpg" alt="" class="wh-44">
+							<h4 class="whatsapp-contacto-name">alexandra</h4>
+							<p class="whatsapp-ultimo-mensaje">Wuju! esto me encanta!! en verdad!</p>
+						</div>
+						<div class="hora">13/07/2017</div>
+					</li>
+					<li>
+						<div class="perfil">
+							<img src="assets/img/katy.jpg" alt="" class="wh-44">
+							<h4 class="whatsapp-contacto-name">alisson</h4>
+							<p class="whatsapp-ultimo-mensaje">No te preocupes, tengo el salón bajo control</p>
+						</div>
+						<div class="hora">11/07/2017</div>
+					</li>
+					<li>
+						<div class="perfil">
+							<img src="assets/img/aldo.jpg" alt="" class="wh-44">
+							<h4 class="whatsapp-contacto-name">Jose Tomas </h4>
+							<p class="whatsapp-ultimo-mensaje">Vamos a comer?</p>
+						</div>
+						<div class="hora">03/07/2017</div>
+					</li>	 					
+				</ul>
+			</aside>
+			<section class="col-md-8 whatsapp-contactos whatsapp-messages">
+				<header class="whatsapp-chat-messages clearfix">
+					<div class="perfil col-xs-9 whatsapp-chat-profile">
+						<img src="assets/img/logocodeacademy.png" alt="">
+						<h4 class="whatsapp-contacto-name">Laboratoria Chile</h4>
+						<ul class="whatsapp-usuarios-mensaje">
+							<li>belen, </li>
+							<li>rocio, </li>
+							<li>marcia, </li>
+							<li>blanca, </li>
+							<li>jose tomas, </li>
+							<li>Tú</li>
+						</ul>
+					</div>
+					<div class="whatsapp-chat-control col-xs-2">
+						<div class="icon-attachment"></div>
+
+						<div class="icon-dots-three-vertical"></div>
+					</div>
+				</header>
+				<section class="whatsapp-chat-panel">
+					<div class="whatsapp-message-list clearfix" id="chat">
+						<div class="whatsapp-message whatsapp-message-in">
+							<div class="whatsapp-message-text">
+								<h5 class="black">belen</h5>
+								<p>Chicos han visto el nuevo corte de Aldo?</p>
+								<div class="hora">11:12</div>
+							</div>
+						</div>
+						<div class="whatsapp-message whatsapp-message-in">
+							<div class="whatsapp-message-text">
+								<h5 class="rosa">blanca</h5>
+								<p>¿Finalmente se corto?</p>
+								<div class="hora">11:13</div>
+							</div>
+						</div>
+						<div class="whatsapp-message whatsapp-message-in">
+							<div class="whatsapp-message-text">
+								<h5 class="rojo">rocio</h5>
+								<p>Jajaja Sii finalmente se corto!!</p>
+								<div class="hora">11:13</div>
+							</div>
+						</div>
+
+						<div class="whatsapp-message whatsapp-message-out">
+							<div class="whatsapp-message-text">
+								<p>Antes parecia mufasa jajajaja</p>
+								<div class="hora">11:14</div>
+							</div>
+						</div>
+
+						<div class="whatsapp-message whatsapp-message-out">
+							<div class="whatsapp-message-text">
+								<p>Ahora si esta decente</p>
+								<div class="hora">11:18</div>
+							</div>
+						</div>
+
+						<div class="whatsapp-message whatsapp-message-in">
+							<div class="whatsapp-message-text">
+								<h5 class="black">belen</h5>
+								<p>¿Por qué se lo habrá cortado?</p>
+								<div class="hora">11:20</div>
+							</div>
+						</div>
+
+						<div class="whatsapp-message whatsapp-message-in">
+							<div class="whatsapp-message-text">
+								<h5 class="amarillo">jose tomas</h5>
+								<p>Ya ya ya, hacia mucho calor que más</p>
+								<div class="hora">11:25</div>
+							</div>
+						</div>
+
+						<div class="whatsapp-message whatsapp-message-in">
+							<div class="whatsapp-message-text">
+								<h5 class="black">belen</h5>
+								<p>Esta siguiendo los pasos de Juan Diego!</p>
+								<div class="hora">11:30</div>
+							</div>
+						</div>
+						<div class="whatsapp-message whatsapp-message-in">
+							<div class="whatsapp-message-text">
+								<h5 class="rojo">rocio</h5>
+								<p>Nunca!!! Juan Diego es único</p>
+								<div class="time">11:31</div>
+							</div>
+						</div>
+
+						<div class="whatsapp-message whatsapp-message-out">
+							<div class="whatsapp-message-text">
+								<p>Jajajaja</p>
+								<div class="hora">11:32</div>
+							</div>
+						</div>
+
+						<div class="whatsapp-message whatsapp-message-in">
+							<div class="whatsapp-message-text">
+								<h5 class="amarillo">jose tomas</h5>
+								<p>Dale dale!</p>
+								<div class="hora">14:25</div>
+							</div>
+						</div>
+						<div class="whatsapp-message whatsapp-message-out">
+							<div class="whatsapp-message-text">
+								<p>Jajaja</p>
+								<div class="hora">14:26</div>
+							</div>
+						</div>
+						<div class="whatsapp-message whatsapp-message-out">
+							<div class="whatsapp-message-text">
+								<p>No se pique!!</p>
+								<div class="hora">14:27</div>
+							</div>
+						</div>
+						<div id="conversacion">
+
+						</div>  							  						
+					</div>
+				</section>
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<small>Desarrollado por alejandra morales</small>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+				<!-- Bootstrap Latest compiled and minified JavaScript -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+				<script src="assets/js/script.js" ></script>
+				</html>
